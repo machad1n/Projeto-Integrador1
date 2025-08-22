@@ -5,7 +5,7 @@
 O cuidado com animais de estimação e o enfrentamento do abandono são desafios presentes em Brasília. Muitos donos de pets possuem rotinas atribuladas e não conseguem dar a devida atenção ao bem-estar dos animais, enquanto ONGs e protetores independentes enfrentam dificuldades para dar visibilidade a adoções e captar recursos.
 
 O **PetConnect Brasília** é um projeto integrador do curso de Ciência da Computação do Centro Universitário de Brasília (CEUB).  
-Ele visa **unir donos de animais, passeadores, cuidadores, ONGs e a comunidade** em uma única plataforma digital. A proposta é facilitar a contratação de serviços de confiança, apoiar adoções e promover o bem-estar animal por meio de um ecossistema colaborativo.
+Ele visa **unir donos de animais, passeadores, cuidadores, ONGs e a comunidade** em uma única plataforma digital. A proposta é facilitar a contratação de serviços de confiança, apoiar adoções, arrecadar recursos e promover o bem-estar animal por meio de um ecossistema colaborativo.
 
 ---
 
@@ -14,7 +14,7 @@ Ele visa **unir donos de animais, passeadores, cuidadores, ONGs e a comunidade**
 Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto local para estruturar a base da solução. Os objetivos são:
 
 -   📊 **Mapear necessidades reais:** Investigar junto à comunidade de Brasília os principais desafios enfrentados por donos de pets, ONGs e voluntários.
--   🐶 **Validar o problema de negócio:** Compreender como a falta de tempo dos donos e a carência de visibilidade para adoções impactam o bem-estar animal.
+-   🐶 **Validar o problema de negócio:** Compreender como a falta de tempo dos donos e a carência de visibilidade para adoções e arrecadações impactam o bem-estar animal.
 -   💡 **Definir requisitos da solução:** Traduzir os insights obtidos em funcionalidades digitais que atendam às necessidades locais.
 -   📱 **Prototipar a plataforma PetConnect:** Esboçar wireframes e fluxos de usuário para demonstrar a viabilidade da solução.
 
