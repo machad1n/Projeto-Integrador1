@@ -22,7 +22,7 @@ Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto
 
 ## 👥 3. Membros da Equipe e Papéis
 
-- [Pedro Machado](https://github.com/machad1n) | **Líder de Equipe** |
+- [Pedro Machado](https://github.com/machad1n) | **Líder de Equipe** | RA: 22502885
 
 ---
 
