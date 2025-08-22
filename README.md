@@ -30,10 +30,9 @@ Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto
 
 A organização inicial do repositório seguirá a seguinte estrutura:
 
--   🎨 **/design:** Mockups, protótipos e paleta de cores do projeto.  
+-   🗄️ **/data:** Dados coletados
 -   📄 **/docs:** Documentação oficial, atas de reunião, especificações e este README.  
--   🗄️ **/database:** Scripts de criação e modelagem de banco de dados.  
--   🕹️ **/prototype:** Protótipos executáveis, testes de conceito e wireframes.  
+-   🕹️ **/results:** Relatórios finais, gráficos e resultados de análise. 
 -   👨‍💻 **/src:** Código-fonte principal da aplicação.  
 
 ---
