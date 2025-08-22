@@ -22,10 +22,7 @@ Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto
 
 ## 👥 3. Membros da Equipe e Papéis
 
-| 👑 **Pedro [Seu Sobrenome]** 
-
-
-*(Substitua os nomes e papéis conforme sua equipe for definida)*
+- [Pedro Machado](https://github.com/machad1n)
 
 ---
 
