@@ -9,7 +9,7 @@ Ele visa **unir donos de animais, passeadores, cuidadores, ONGs e a comunidade**
 
 ---
 
-## 🎯 2. Objetivos Iniciais (Fase de Levantamento de Dados)
+## 🎯 2. Objetivos Iniciais 
 
 Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto local para estruturar a base da solução. Os objetivos são:
 
