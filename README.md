@@ -30,8 +30,8 @@ Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto
 
 A organização inicial do repositório seguirá a seguinte estrutura:
 
--   🗄️ **/data:** Dados coletados
--   📄 **/docs:** Documentação oficial, atas de reunião, especificações e este README.  
+-   🗄️ **/data:** Dados coletados.
+-   📄 **/docs:** Documentação oficial, atas de reunião e especificações.
 -   🕹️ **/results:** Relatórios finais, gráficos e resultados de análise. 
 -   👨‍💻 **/src:** Código-fonte principal da aplicação.  
 
