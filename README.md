@@ -2,7 +2,7 @@
 
 ## 🚀 1. Descrição do Projeto
 
-O cuidado com animais de estimação e o enfrentamento do abandono são desafios presentes em Brasília. Muitos donos de pets possuem rotinas atribuladas e não conseguem dar a devida atenção ao bem-estar dos animais, enquanto ONGs e protetores independentes enfrentam dificuldades para dar visibilidade a adoções e captar recursos.
+O cuidado com animais de estimação e o enfrentamento do abandono são desafios presentes em Brasília. Muitos donos de pets possuem rotinas cheias e não conseguem dar a devida atenção ao bem-estar dos animais, enquanto ONGs e protetores independentes enfrentam dificuldades para dar visibilidade a adoções e captar recursos.
 
 O **PetConnect Brasília** é um projeto integrador do curso de Ciência da Computação do Centro Universitário de Brasília (CEUB).  
 Ele visa **unir donos de animais, passeadores, cuidadores, ONGs e a comunidade** em uma única plataforma digital. A proposta é facilitar a contratação de serviços de confiança, apoiar adoções, arrecadar recursos e promover o bem-estar animal por meio de um ecossistema colaborativo.
