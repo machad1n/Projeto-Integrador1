@@ -4,9 +4,8 @@
 
 O cuidado com cães e gatos é um desafio presente na vida de muitos tutores. Donos de pets com rotinas cheias nem sempre conseguem dar a devida atenção ao bem-estar dos animais, enquanto ONGs e protetores independentes enfrentam dificuldades para divulgar adoções e captar recursos.
 
-O **CarePaw** é um projeto integrador do curso de Ciência da Computação do Centro Universitário de Brasília (CEUB), voltado exclusivamente para cães e gatos domésticos.
-A plataforma visa unir donos de pets, passeadores, cuidadores, ONGs e a comunidade, facilitando a contratação de serviços confiáveis, apoiando adoções e promovendo o bem-estar desses animais por meio de um ecossistema digital colaborativo.
----
+O **CarePaw** é um projeto integrador do curso de Ciência da Computação do Centro Universitário de Brasília (CEUB), voltado **exclusivamente para cães e gatos domésticos**.  
+A plataforma visa **unir donos de pets, passeadores, cuidadores, ONGs e a comunidade**, facilitando a contratação de serviços confiáveis, apoiando adoções e promovendo o bem-estar desses animais por meio de um ecossistema digital colaborativo.
 
 ## 🎯 2. Objetivos Iniciais 
 
