@@ -15,7 +15,7 @@ Para a primeira fase do projeto, o foco está em pesquisa e análise do contexto
 
 -   📊 **Mapear necessidades reais** de donos de cães e gatos, ONGs e voluntários em Brasília. 
 -   🐶 **Validar o problema de negócio:** Compreender como a falta de tempo dos donos e a carência de visibilidade para adoções e arrecadações impactam o bem-estar desses animais.
--   💡 **Definir requisitos da solução:** Traduzir os insights obtidos em funcionalidades digitais que atendam às necessidades locais.
+-   💡 **Definir requisitos da solução:** Traduzir os insights obtidos em funcionalidades digitais que atendam às necessidades.
 -   📱 **Prototipar a plataforma CarePaw:** Esboçar wireframes e fluxos de usuário para demonstrar a viabilidade da solução.
 
 ---
