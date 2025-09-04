@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Protótipo CarePaw</title>
+<style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #f9fafb;
+    color: #222;
+  }
+
+  /* Layout geral */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* Menu lateral */
+  nav.sidebar {
+    width: 220px;
+    background-color: #2f855a; /* verde escuro */
+    color: #e6fffa;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  nav.sidebar h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    user-select: none;
+  }
+
+  nav.sidebar button {
+    background: transparent;
+    border: none;
+    color: #e6fffa;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+  }
+
+  nav.sidebar button:hover,
+  nav.sidebar button:focus {
+    background-color: #38a169; /* verde médio */
+    outline: none;
+  }
+
+  /* Área principal */
+  main.content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-height: 100vh;
+  }
+
+  /* Cabeçalho superior */
+  header.topbar {
+    background-color: #38a169;
+    color: #e6fffa;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+
+  header.topbar h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  header.topbar .tagline {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 0.2rem;
+  }
+
+  .profile-placeholder {
+    background-color: #276749;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #e6fffa;
+    user-select: none;
+  }
+
+  /* Conteúdo principal */
+  section.dashboard {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Cards principais */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: #e6fffa;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2f855a;
+  }
+
+  .card .placeholder-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #276749;
+    letter-spacing: 2px;
+  }
+
+  /* Seção de gráficos simulados */
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+
+  .chart-box {
+    background: #c6f6d5;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #22543d;
+    font-weight: 600;
+    font-size: 1.1rem;
+    user-select: none;
+    position: relative;
+  }
+
+  /* Simulação de gráfico circular */
+  .chart-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #9ae6b4;
+    box-shadow: inset 0 0 15px #68d391;
+  }
+
+  /* Simulação de gráfico retangular */
+  .chart-rect {
+    width: 80%;
+    height: 40px;
+    background: #68d391;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px #48bb78;
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
+    nav.sidebar {
+      width: 60px;
+      padding: 1rem 0.5rem;
+    }
+
+    nav.sidebar h2 {
+      display: none;
+    }
+
+    nav.sidebar button {
+      font-size: 0;
+      padding: 0.75rem 0;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    nav.sidebar button::before {
+      content: attr(data-short);
+      font-size: 1.3rem;
+      color: #e6fffa;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      user-select: none;
+    }
+
+    main.content-area {
+      min-height: auto;
+    }
+
+    section.dashboard {
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar" aria-label="Menu lateral de navegação">
+      <h2>Menu</h2>
+      <button type="button" data-short="🏠" aria-label="Início">Início</button>
+      <button type="button" data-short="🏠" aria-label="Início">Cuidadores</button>
+      <button type="button" data-short="🏢" aria-label="ONGs">ONGs</button>
+      <button type="button" data-short="🐾" aria-label="Adoções">Adoções</button>
+      <button type="button" data-short="⚠️" aria-label="Casos de Maus-tratos">Casos de Maus-tratos</button>
+      <button type="button" data-short="📣" aria-label="Denúncias">Denúncias</button>
+      <button type="button" data-short="⚙️" aria-label="Configurações">Configurações</button>
+    </nav>
+
+    <main class="content-area">
+      <header class="topbar">
+        <div>
+          <h1>CarePaw</h1>
+          <p class="tagline">Plataforma para o bem-estar de cães e gatos</p>
+        </div>
+        <div class="profile-placeholder" aria-label="Perfil do usuário" title="Usuário">U</div>
+      </header>
+
+      <section class="dashboard" aria-label="Dashboard principal">
+        <div class="cards" role="list">
+          <article class="card" role="listitem" aria-label="Número de ONGs cadastradas">
+            <h3>ONGs cadastradas</h3>
+            <div class="placeholder-number">--</div>
+          </article>
+          <article class="card" role="listitem" aria-label="Quantidade de animais abandonados">
+            <h3>Animais abandonados</h3>
+            <div class="placeholder-number">--</div>
+          </article>
+          <article class="card" role="listitem" aria-label="Casos de maus-tratos reportados">
+            <h3>Casos de maus-tratos</h3>
+            <div class="placeholder-number">--</div>
+          </article>
+          <article class="card" role="listitem" aria-label="Animais disponíveis para adoção">
+            <h3>Animais para adoção</h3>
+            <div class="placeholder-number">--</div>
+          </article>
+        </div>
+
+        <div class="charts" aria-label="Seção de gráficos simulados">
+          <section class="chart-box" aria-label="Gráfico de barras simulado">
+            <div class="chart-rect" aria-hidden="true"></div>
+            <span style="position:absolute; bottom: 10px;">Gráfico de barras</span>
+          </section>
+          <section class="chart-box" aria-label="Gráfico circular simulado">
+            <div class="chart-circle" aria-hidden="true"></div>
+            <span style="position:absolute; bottom: 10px;">Gráfico circular</span>
+          </section>
+          <section class="chart-box" aria-label="Gráfico de linhas simulado">
+            <div class="chart-rect" style="height: 30px; width: 90%;" aria-hidden="true"></div>
+            <span style="position:absolute; bottom: 10px;">Gráfico de linhas</span>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+</content>
+</create_file>
