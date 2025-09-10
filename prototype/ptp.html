@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CarePaw Dashboard - Bem-estar de Cães e Gatos</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5faf8;
+      color: #2c3e50;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #2a9d8f;
+    }
+
+    header {
+      background: #2a9d8f;
+      color: #e0f2f1;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    header .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #1f7a73;
+      color: #e0f2f1;
+      outline: none;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    main h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #264653;
+      text-align: center;
+    }
+
+    /* Grid dos cards indicadores */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: #e0f2f1;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 160px;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #1b4332;
+    }
+
+    .placeholder-data {
+      background: #b0bec5;
+      border-radius: 6px;
+      color: #37474f;
+      font-size: 0.9rem;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      user-select: none;
+    }
+
+    /* Seção de gráficos */
+    .charts-section {
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .chart-box {
+      background: #cfd8dc;
+      border-radius: 8px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #455a64;
+      font-weight: 600;
+      font-size: 1rem;
+      user-select: none;
+      box-shadow: inset 0 0 8px #90a4ae;
+      text-align: center;
+      padding: 0 0.5rem;
+    }
+
+    footer {
+      background: #2a9d8f;
+      color: #e0f2f1;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer .social-links {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    footer .social-links a {
+      color: #e0f2f1;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-links a:hover,
+    footer .social-links a:focus {
+      color: #1f7a73;
+      outline: none;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" tabindex="0">CarePaw Dashboard</div>
+    <nav aria-label="Menu principal">
+      <a href="#" tabindex="0">Início</a>
+      <a href="#" tabindex="0">Dados</a>
+      <a href="#" tabindex="0">ONGs</a>
+      <a href="#" tabindex="0">Legislação</a>
+      <a href="#" tabindex="0">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 tabindex="0">Bem-estar de Cães e Gatos no Brasil</h1>
+
+    <section class="cards-grid" aria-label="Indicadores e relatórios">
+      <article class="card" tabindex="0">
+        <h2>Brasil tem terceira maior população pet do mundo</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Gráfico aqui
+        </div>
+      </article>
+
+      <article class="card" tabindex="0">
+        <h2>Legislação brasileira garante medidas de bem-estar e combate à crueldade animal</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Indicador numérico
+        </div>
+      </article>
+
+      <article class="card" tabindex="0">
+        <h2>Análise de denúncias de maus-tratos contra animais na região de Curitiba, utilizando critérios de bem-estar animal</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Gráfico aqui
+        </div>
+      </article>
+
+      <article class="card" tabindex="0">
+        <h2>Análise de casos de maus-tratos a cães e gatos na cidade de São Paulo</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Indicador numérico
+        </div>
+      </article>
+
+      <article class="card" tabindex="0">
+        <h2>Quase 5 milhões de pets estão em situação de vulnerabilidade no Brasil</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Gráfico aqui
+        </div>
+      </article>
+
+      <article class="card" tabindex="0">
+        <h2>Brasil tem quase 185 mil animais resgatados por ONGs</h2>
+        <div class="placeholder-data" aria-label="Espaço reservado para gráfico ou indicador">
+          Indicador numérico
+        </div>
+      </article>
+    </section>
+
+    <section class="charts-section" aria-label="Seção de gráficos">
+      <div class="charts-grid">
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Barras: Brasil tem terceira maior população pet do mundo">
+          Gráfico de Barras
+        </div>
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Pizza: O Brasil tem uma longa tradição de incorporar a proteção animal em sua legislação">
+          Gráfico de Pizza
+        </div>
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Linhas: Análise de maus-tratos a animais">
+          Gráfico de Linhas
+        </div>
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Radar: Análise de maus-tratos a cães e gatos em SP">
+          Gráfico de Radar
+        </div>
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Área: Quase 5 milhões de pets estão em situação de vulnerabilidade no Brasil">
+          Gráfico de Área
+        </div>
+        <div class="chart-box" tabindex="0" aria-label="Gráfico de Colunas: Brasil tem quase 185 mil animais resgatados por ONGs, diz instituto">
+          Gráfico de Colunas
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div tabindex="0">Projeto acadêmico - Dados sobre Bem-estar Animal no Brasil</div>
+    <nav class="social-links" aria-label="Redes sociais">
+      <a href="#" tabindex="0" aria-label="Facebook">Facebook</a>
+      <a href="#" tabindex="0" aria-label="Instagram">Instagram</a>
+      <a href="#" tabindex="0" aria-label="Twitter">Twitter</a>
+      <a href="#" tabindex="0" aria-label="LinkedIn">LinkedIn</a>
+    </nav>
+  </footer>
+</body>
+</html>
