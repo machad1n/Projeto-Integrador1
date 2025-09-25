@@ -34,7 +34,8 @@ A organização inicial do repositório seguirá a seguinte estrutura:
 
 -   🗄️ **/data:** Dados coletados.
 -   📄 **/docs:** Documentação oficial, atas de reunião e especificações.
--   🕹️ **/results:** Relatórios finais, gráficos e resultados de análise. 
+-   🕹️ **/results:** Relatórios finais, gráficos e resultados de análise.
+-   🗄️ **/prototype:** Protótipo do dashboard.
 -   👨‍💻 **/src:** Código-fonte principal da aplicação.  
 
 ---
