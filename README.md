@@ -1,5 +1,5 @@
 # 🐾 CarePaw: Plataforma de Bem-Estar para Cães e Gatos
-qualquer coisa 
+ 
 ## 🚀 1. Descrição do Projeto
 
 O cuidado com cães e gatos é um desafio constante. Muitos tutores têm rotinas corridas e nem sempre conseguem oferecer atenção adequada aos seus pets. Paralelamente, a taxa de abandono desses animais é alta no Brasil, e diversos cães e gatos acabam sofrendo maus-tratos ou negligência. ONGs e protetores independentes enfrentam dificuldades para divulgar adoções, captar recursos e fornecer suporte a esses animais.
